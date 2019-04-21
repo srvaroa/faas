@@ -1,0 +1,22 @@
+provider:
+  name: faas
+  gateway: http://127.0.0.1:8080
+functions:
+  url2txt:
+  lang: go
+  handler: ./jsonrouter
+  image: mrvaroa/jsonrouter
+  environment:
+    config: | 
+      {
+          "routes": [
+              {
+                  "path":     "$.books",
+                  "target": "http://localhost/library"
+              },
+              {
+                  "path":     "$.books[?(@.author =~ /(?i).*TOLSTOI/)].author",
+                  "target": "http://localhost/tolstoi"
+              }
+          ]
+      }
