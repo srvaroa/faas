@@ -32,7 +32,7 @@ func Handle(req []byte) string {
 	for endpoint, _ := range res {
 		err = dump.Send(&req, endpoint)
 		if err != nil {
-			return fmt.Sprintf("Failed to forward event", err)
+			return fmt.Sprintf("Failed to forward event %s", err)
 		}
 	}
 

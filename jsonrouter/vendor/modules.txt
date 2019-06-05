@@ -1,0 +1,5 @@
+# github.com/oliveagle/jsonpath v0.0.0-20180606110733-2e52cf6e6852
+github.com/oliveagle/jsonpath
+# github.com/srvaroa/jsonrouter v0.0.0-20190605203932-047d99d01257
+github.com/srvaroa/jsonrouter/pkg/forwarders
+github.com/srvaroa/jsonrouter/pkg/router
