@@ -6,3 +6,5 @@ functions:
     lang: go
     handler: ./jsonrouter
     image: jsonrouter:latest
+    environment:
+      config: "{}"

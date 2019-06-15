@@ -1,0 +1,12 @@
+
+/*
+	// labeller := NewLabeller(gh.NewClient(newHttpClient("86e1a355bf700dd747973bdd0a865da34b54e57b")))
+func newHttpClient(ghAccessToken string) *http.Client {
+	ctx := context.Background()
+	ts := oauth2.StaticTokenSource(
+		&oauth2.Token{AccessToken: ghAccessToken},
+	)
+	return oauth2.NewClient(ctx, ts)
+}
+*/
+
