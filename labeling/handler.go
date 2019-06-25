@@ -7,7 +7,6 @@ import (
 	"github.com/bradleyfalzon/ghinstallation"
 	"github.com/google/go-github/v26/github"
 	"github.com/openfaas-incubator/go-function-sdk"
-	"github.com/srvaroa/faas/labeling/pkg/labeller"
 )
 
 func Handle(req handler.Request) (handler.Response, error) {
@@ -32,7 +31,7 @@ func Handle(req handler.Request) (handler.Response, error) {
 	}
 
 	gh := github.NewClient(&http.Client{Transport: itr})
-	l := labeller.NewLabeller(gh)
+	l := NewLabeller(gh)
 
 	if err = l.HandleEvent(eventName, &req.Body); err != nil {
 		log.Printf("Failed to process event: %s", err)

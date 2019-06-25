@@ -2,9 +2,17 @@
 github.com/bradleyfalzon/ghinstallation
 # github.com/dgrijalva/jwt-go v3.2.0+incompatible
 github.com/dgrijalva/jwt-go
-# github.com/google/go-github/v26 v26.0.4
+# github.com/google/go-github/v26 v26.0.9
 github.com/google/go-github/v26/github
 # github.com/google/go-querystring v1.0.0
 github.com/google/go-querystring/query
 # github.com/openfaas-incubator/go-function-sdk v0.0.0-20181217173454-cac4b8744921
 github.com/openfaas-incubator/go-function-sdk
+# golang.org/x/crypto v0.0.0-20190308221718-c2843e01d9a2
+golang.org/x/crypto/openpgp
+golang.org/x/crypto/openpgp/armor
+golang.org/x/crypto/openpgp/errors
+golang.org/x/crypto/openpgp/packet
+golang.org/x/crypto/openpgp/s2k
+golang.org/x/crypto/cast5
+golang.org/x/crypto/openpgp/elgamal

@@ -1,4 +1,4 @@
-package labeller
+package function
 
 import (
 	"fmt"
