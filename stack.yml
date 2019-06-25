@@ -7,4 +7,8 @@ functions:
     handler: ./jsonrouter
     image: jsonrouter:latest
     environment:
-      config: "{}"
+      config: "{ routes: []}"
+  labeling:
+    lang: golang-http
+    handler: ./labeling
+    image: labeling:latest
